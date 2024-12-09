@@ -51,7 +51,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "https://chatapp-backend-nxro.onrender.com/api/user",
+        "https://vikram-chat-app.onrender.com/api/user",
         {
           name,
           email,

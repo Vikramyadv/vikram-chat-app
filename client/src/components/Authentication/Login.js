@@ -41,7 +41,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "https://chatapp-backend-nxro.onrender.com/api/user/login",
+        "https://vikram-chat-app.onrender.com/api/user/login",
         { email, password },
         config
       );
