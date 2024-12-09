@@ -21,14 +21,14 @@ app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 
 app.use(express.static(path.join(_dirname, "/client/build")));
-app.get("/", (_, res) => {
+app.get("/chats", (_, res) => {
   res.sendFile(path.resolve(_dirname, "client", "build", "index.html"));
 });
 
 app.use(notFound);
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 const server = app.listen(
   PORT,
